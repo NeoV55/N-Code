@@ -8,6 +8,7 @@ import {
   useRef,
 } from "react";
 import { AnimatePresence } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 import Loader from "./loader";
 import gsap from "gsap";
@@ -20,7 +21,7 @@ type PreloaderContextType = {
 const INITIAL: PreloaderContextType = {
   isLoading: true,
   loadingPercent: 0,
-  bypassLoading: () => {},
+  bypassLoading: () => { },
 };
 export const preloaderContext = createContext<PreloaderContextType>(INITIAL);
 
@@ -42,11 +43,13 @@ function Preloader({ children, disabled = false }: PreloaderProps) {
   const [loadingPercent, setLoadingPercent] = useState(0);
   const loadingTween = useRef<gsap.core.Tween>();
 
+  const pathname = usePathname();
+  const isNCode = pathname?.startsWith("/n-code");
+
   const bypassLoading = () => {
     loadingTween.current?.progress(0.99).kill();
     setLoadingPercent(100);
     setIsLoading(false);
-    // console.log("killed", loadingTween.current);
   };
   const loadingPercentRef = useRef<{ value: number }>({ value: 0 });
   useEffect(() => {
@@ -69,7 +72,9 @@ function Preloader({ children, disabled = false }: PreloaderProps) {
     <preloaderContext.Provider
       value={{ isLoading, bypassLoading, loadingPercent }}
     >
-      <AnimatePresence mode="wait">{isLoading && <Loader />}</AnimatePresence>
+      <AnimatePresence mode="wait">
+        {isLoading && !isNCode && <Loader />}
+      </AnimatePresence>
       {children}
     </preloaderContext.Provider>
   );

@@ -1,8 +1,8 @@
 export const PORTAL_LINKS = {
     // Using the same editable Google Form URL for mock/demo purposes
-    parentConsent: "https://docs.google.com/forms/d/e/1FAIpQLSea-K_aRMSJnL10XKisu1aXiNN_1EBruZIUqPxBmYjWCPlVZQ/viewform?usp=dialog",
-    terms: "https://docs.google.com/forms/d/e/1FAIpQLSea-K_aRMSJnL10XKisu1aXiNN_1EBruZIUqPxBmYjWCPlVZQ/viewform?usp=dialog",
-    "student-registration": "https://docs.google.com/forms/d/e/1FAIpQLSea-K_aRMSJnL10XKisu1aXiNN_1EBruZIUqPxBmYjWCPlVZQ/viewform?usp=dialog",
+    "parentConsent": "https://docs.google.com/forms/d/e/1FAIpQLSea-K_aRMSJnL10XKisu1aXiNN_1EBruZIUqPxBmYjWCPlVZQ/viewform",
+    "terms": "https://docs.google.com/forms/d/e/1FAIpQLScevIAMRkTrEI-0JMu6MNsV1bBbIW5iTg_1Nd-L5cgWtQcvGA/viewform",
+    "student-registration": "https://docs.google.com/forms/d/e/1FAIpQLSdplQXpZ7PgxLFkMG1WtdSGkb6Phz3gDjdIlbHY5br0q-VVrw/viewform",
     support: "mailto:support@n-code.com",
 };
 
