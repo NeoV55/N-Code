@@ -2,7 +2,7 @@
 
 import { PORTAL_LINKS } from "@/data/portal-links";
 
-export const GoogleFormIframe = ({ link = PORTAL_LINKS["parentConsent"] }: { link?: string }) => {
+const GoogleFormIframe = ({ link = PORTAL_LINKS["parentConsent"] }: { link?: string }) => {
     return (
         <div className="relative w-full h-screen min-h-screen bg-white">
             <iframe
