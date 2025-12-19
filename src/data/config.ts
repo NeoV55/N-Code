@@ -32,7 +32,7 @@ const config = {
 
 
   get ogImg() {
-    return this.site + "/assets/seo/og-image.png";
+    return this.site + "/assets/image.png";
   },
   social: {
     twitter: "https://x.com/",
