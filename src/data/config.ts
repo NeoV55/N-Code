@@ -31,8 +31,8 @@ const config = {
   githubUsername: "NeoV55",
 
 
-  get ogImg() {
-    return this.site + "/assets/image.png";
+   get ogImg() {
+    return this.site + "/ticketbase1.png";
   },
   social: {
     twitter: "https://x.com/",
