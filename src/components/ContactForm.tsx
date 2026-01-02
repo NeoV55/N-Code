@@ -66,13 +66,13 @@ const ContactForm = () => {
   };
   return (
     <form className="max-w-7xl mx-auto sm:mt-4 px-4 sm:px-0" onSubmit={handleSubmit}>
-      <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
+      <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-1">
       
       </div>
       <div className="grid w-full gap-1.5 mb-4">
-        <Label htmlFor="content">Your Message</Label>
+        <Label htmlFor="content"></Label>
         <a
-                    href="https://wa.me/YOUR_NUMBER"
+                    href="https://wa.me/60168932327"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="
@@ -111,7 +111,7 @@ const ContactForm = () => {
         
         
                   <a
-                    href="https://t.me/YOUR_USERNAME"
+                    href="https://t.me/NeoV55"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="
@@ -183,26 +183,8 @@ const ContactForm = () => {
                     <BottomGradient />
                   </a>
         <p className="text-sm text-muted-foreground">
-          I&apos;ll never share your data with anyone else. Pinky promise!
         </p>
       </div>
-      <Button
-        disabled={loading}
-        className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
-        type="submit"
-      >
-        {loading ? (
-          <div className="flex items-center justify-center">
-            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-            <p>Please wait</p>
-          </div>
-        ) : (
-          <div className="flex items-center justify-center">
-            Send Message <ChevronRight className="w-4 h-4 ml-4" />
-          </div>
-        )}
-        <BottomGradient />
-      </Button>
     </form>
   );
 };

@@ -1,14 +1,14 @@
 const footer: { title: string; href: string }[] = [
   {
-    title: "Blog",
+    title: "Privacy Policy",
     href: "/blogs",
   },
   {
-    title: "Newsletter",
+    title: "Terms of Service",
     href: "/news",
   },
   {
-    title: "N Code",
+    title: "N-Code Labs",
     href: "/n-code",
   },
 ];

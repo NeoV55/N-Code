@@ -11,11 +11,19 @@ import {
   FaNetworkWired,
   FaGraduationCap,
 } from "react-icons/fa";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 const SERVICES_DATA = [
   {
     title: "Cybersecurity Services",
     icon: FaShieldAlt,
+    color: "red",
     description:
       "Protection for your digital assets with enterprise-grade security protocols.",
     items: [
@@ -28,6 +36,7 @@ const SERVICES_DATA = [
   {
     title: "Data Science & AI Solutions",
     icon: FaBrain,
+    color: "purple",
     description:
       "Unlock actionable insights with advanced machine learning and analytics.",
     items: [
@@ -39,6 +48,7 @@ const SERVICES_DATA = [
   {
     title: "Cloud & Virtualization Solutions",
     icon: FaCloud,
+    color: "blue",
     description:
       "Scalable infrastructure designed for resilience and performance.",
     items: [
@@ -50,6 +60,7 @@ const SERVICES_DATA = [
   {
     title: "Software, Blockchain and AI Developments",
     icon: FaLaptopCode,
+    color: "indigo",
     description:
       "Bespoke software tailored to your unique business requirements.",
     items: [
@@ -63,6 +74,7 @@ const SERVICES_DATA = [
   {
     title: "ICT Services, Ops and Management",
     icon: FaNetworkWired,
+    color: "teal",
     description:
       "Strategic IT operations to optimize efficiency and reliable growth.",
     items: [
@@ -76,6 +88,7 @@ const SERVICES_DATA = [
   {
     title: "Education and Publications",
     icon: FaGraduationCap,
+    color: "green",
     description:
       "Empowering minds through comprehensive ICT and cybersecurity education.",
     items: [
@@ -88,103 +101,100 @@ const SERVICES_DATA = [
   },
 ];
 
+const COLOR_MAP = [
+  {
+    iconBg: "bg-red-500/10",
+    iconText: "text-red-600 dark:text-red-400",
+    title: "text-red-700 dark:text-red-400",
+  },
+  {
+    iconBg: "bg-purple-500/10",
+    iconText: "text-purple-600 dark:text-purple-400",
+    title: "text-purple-700 dark:text-purple-400",
+  },
+  {
+    iconBg: "bg-blue-500/10",
+    iconText: "text-blue-600 dark:text-blue-400",
+    title: "text-blue-700 dark:text-blue-400",
+  },
+  {
+    iconBg: "bg-indigo-500/10",
+    iconText: "text-indigo-600 dark:text-indigo-400",
+    title: "text-indigo-700 dark:text-indigo-400",
+  },
+  {
+    iconBg: "bg-teal-500/10",
+    iconText: "text-teal-600 dark:text-teal-400",
+    title: "text-teal-700 dark:text-teal-400",
+  },
+  {
+    iconBg: "bg-green-500/10",
+    iconText: "text-green-600 dark:text-green-400",
+    title: "text-green-700 dark:text-green-400",
+  },
+];
+
+const BULLET_COLORS = [
+  "bg-red-500",
+  "bg-orange-500",
+  "bg-yellow-500",
+  "bg-green-500",
+  "bg-blue-500",
+  "bg-purple-500",
+];
+
 const Services: React.FC = () => {
   return (
-    <section id="services" className="relative w-full py-24">
-      <div className="mx-auto max-w-7xl px-4 md:px-8">
-        <Link href="#services" className="block">
-          <h2 className="mb-16 text-center text-4xl md:text-6xl font-black tracking-tight">
-            <span className="bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent">
-              BESPOKE
-            </span>
-            <br className="md:hidden" />
-            <span className="text-white/40"> SERVICES</span>
-          </h2>
-        </Link>
+    <section id="services" className="min-h-screen max-w-7xl mx-auto px-4">
+      <Link href="#services">
+        <h2
+          className={cn(
+            "bg-clip-text text-4xl text-center text-transparent md:text-7xl pt-16 mb-12",
+            "bg-gradient-to-b from-black/80 to-black/50",
+            "dark:bg-gradient-to-b dark:from-white/80 dark:to-white/20"
+          )}
+        >
+          BESPOKE <br />
+          SERVICES
+        </h2>
+      </Link>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {SERVICES_DATA.map((service, index) => (
-            <div key={index} className="group relative">
-              {/* Hover Outline: Orange, very light initially, visible on hover */}
-              <div
-                className="
-                  absolute inset-0 rounded-[28px]
-                  border-2 border-orange-500/0
-                  group-hover:border-orange-500/40
-                  transition-colors duration-500
-                  pointer-events-none z-20
-                "
-              />
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:mt-20">
+        {SERVICES_DATA.map((service, index) => {
+          const Icon = service.icon;
+          const colors = COLOR_MAP[index % COLOR_MAP.length];
 
-              {/* Glass card */}
-              <div
-                className="
-                  relative h-full flex flex-col rounded-[26px] p-8
-                  bg-zinc-900/20 backdrop-blur-xl
-                  border border-white/5
-                  transition-all duration-500
-                  group-hover:bg-zinc-900/30
-                  group-hover:shadow-2xl
-                  group-hover:shadow-orange-900/10
-                "
-              >
-                {/* Inner Glow */}
-                <div
-                  className="
-                    pointer-events-none absolute inset-0 rounded-[26px]
-                    bg-gradient-to-b from-white/5 to-transparent
-                    opacity-50
-                  "
-                />
-
-                {/* Icon */}
-                <div
-                  className="
-                    relative mb-6 flex h-14 w-14 items-center justify-center
-                    rounded-2xl
-                    bg-white/5 backdrop-blur-md
-                    border border-white/10
-                    shadow-inner
-                    transition-transform duration-500
-                    group-hover:scale-105
-                    group-hover:border-orange-500/20
-                  "
-                >
-                  <service.icon className="text-2xl text-white/90 group-hover:text-orange-400 transition-colors duration-300" />
+          return (
+            <Card key={index} className="bg-white/70 dark:bg-black/70 backdrop-blur-md rounded-2xl border-0 shadow-xl">
+              <CardHeader className="flex flex-row gap-4 items-start">
+                <div className={cn("flex h-14 w-14 items-center justify-center rounded-xl", colors.iconBg)}>
+                  <Icon className={cn("text-2xl", colors.iconText)} />
                 </div>
 
-                {/* Content */}
-                <div className="relative z-10 flex h-full flex-col">
-                  <h3 className="mb-3 text-2xl font-bold text-white tracking-wide group-hover:text-orange-100 transition-colors duration-300">
+                <div className="flex-1">
+                  <CardTitle className={cn("text-2xl font-semibold", colors.title)}>
                     {service.title}
-                  </h3>
+                  </CardTitle>
 
-                  <p className="mb-6 text-sm leading-relaxed text-zinc-400">
+                  <CardDescription className="text-gray-800 dark:text-gray-300 text-base mt-1">
                     {service.description}
-                  </p>
-
-                  <ul className="mt-auto space-y-3">
-                    {service.items.map((item, idx) => (
-                      <li
-                        key={idx}
-                        className="flex items-start gap-3 text-sm text-zinc-300 font-medium"
-                      >
-                        <span
-                          className="
-                            mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full
-                            bg-orange-500/70 group-hover:bg-orange-400
-                            transition-colors duration-300
-                          "
-                        />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
+                  </CardDescription>
                 </div>
-              </div>
-            </div>
-          ))}
-        </div>
+              </CardHeader>
+
+              <CardContent>
+                <ul className="space-y-3">
+                  {service.items.map((item, idx) => (
+                    <li key={idx} className="flex items-start gap-3 text-gray-700 dark:text-gray-300 text-sm">
+                      <span className={cn("mt-2 h-1.5 w-1.5 rounded-full", BULLET_COLORS[idx % BULLET_COLORS.length])} />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          );
+        })}
       </div>
     </section>
   );

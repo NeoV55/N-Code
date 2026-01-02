@@ -20,13 +20,12 @@ const ContactSection = () => {
       <Link href={"#contact"}>
         <h2
           className={cn(
-            "bg-clip-text text-4xl text-center text-transparent md:text-7xl pt-16 mb-12",
+            "bg-clip-text text-4xl text-center text-transparent md:text-7xl pt-40 mb-12",
             "bg-gradient-to-b from-black/80 to-black/50",
             "dark:bg-gradient-to-b dark:from-white/80 dark:to-white/20 dark:bg-opacity-50"
           )}
         >
-          LET&apos;S WORK <br />
-          TOGETHER
+          LET&apos;S CONNECT <br />
         </h2>
       </Link>
 
@@ -35,9 +34,9 @@ const ContactSection = () => {
         <div className="lg:col-span-2 flex justify-center">
           <Card className="bg-white/70 dark:bg-black/70 backdrop-blur-md rounded-2xl border-0 shadow-xl max-w-2xl w-full">
             <CardHeader>
-              <CardTitle className="text-4xl text-gray-800 dark:text-white">Contact Form</CardTitle>
+              <CardTitle className="text-4xl text-gray-800 dark:text-white">Contact</CardTitle>
               <CardDescription className="text-gray-600 dark:text-gray-300 text-lg">
-          Fill out the form below or use the quick buttons to get in touch directly.
+          Use the quick buttons to get in touch directly.
               </CardDescription>
             </CardHeader>
             <CardContent>

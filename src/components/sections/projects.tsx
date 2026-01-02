@@ -65,10 +65,10 @@ const ProjectsSection = () => {
               <Image
               src={project.src}
               alt={project.title}
-              width={120}
-              height={40}
+              width={240}
+              height={80}
               className={cn(
-                "relative z-10 object-contain transition-all duration-300 h-12 md:h-16",
+                "relative z-10 object-contain transition-all duration-300 h-16 md:h-24 w-auto",
                 activeIndex === index
                 ? "grayscale-0 opacity-100"
                 : "grayscale opacity-40 hover:opacity-60"
@@ -101,27 +101,11 @@ const ProjectsSection = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.4 }}
-            className="grid md:grid-cols-2 gap-12 items-center"
+            className="flex flex-col items-center justify-center"
           >
-            {/* Left Side: Image */}
-            <div
-              className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl cursor-pointer group"
-              onClick={() => {
-                setActiveProject(projects[activeIndex]);
-                // We'll use the existing modal logic if needed, but for now just showing content
-              }}
-            >
-              <Image
-                src={projects[activeIndex].src}
-                alt={projects[activeIndex].title}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
-            </div>
 
             {/* Right Side: Quote/Content */}
-            <div className="max-w-xl">
+            <div className="max-w-xl mx-auto text-center">
               <Modal>
                 <p className="text-xl md:text-3xl text-cyan-400/90 dark:text-cyan-400/80 font-medium leading-relaxed mb-6 italic">
                   “{projects[activeIndex].quote || projects[activeIndex].description || "Building the future of digital experiences with cutting-edge technology and innovative design."}”
@@ -136,7 +120,7 @@ const ProjectsSection = () => {
                     setActiveProject(projects[activeIndex]);
                     // console.log("Opening modal for:", projects[activeIndex].title);
                   }}
-                  className="group p-0 bg-transparent text-blue-500 hover:text-blue-400 transition-colors font-medium flex items-center gap-2"
+                  className="group p-0 bg-transparent text-blue-500 hover:text-blue-400 transition-colors font-medium flex items-center justify-center gap-2 mx-auto"
                 >
                   Read the case study
                   <span className="text-lg transition-transform group-hover:translate-x-1">›</span>

@@ -6,13 +6,13 @@ import { ArrowUpRight, ExternalLink, Link2, MoveUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
-import defisyncImg from "@/data/Folderwlogo/Gemini_Generated_Image_5ys34l5ys34l5ys3.png";
-import ticketbaseImg from "@/data/Folderwlogo/ticketbase1.png";
-import compliancelinkImg from "@/data/Folderwlogo/Gemini_Generated_Image_6zmro26zmro26zmr.png";
-import auditwarpImg from "@/data/Folderwlogo/Gemini_Generated_Image_f636u4f636u4f636.png";
-import cybervaultImg from "@/data/Folderwlogo/cybervault-logo.png";
-import suisendImg from "@/data/Folderwlogo/Gemini_Generated_Image_fvpb0kfvpb0kfvpb.png";
-import racecraftImg from "@/data/Folderwlogo/RaceCraftAI-GR.png";
+import defisyncImg from "@/data/Folderwlogo/defisync.png";
+import ticketbaseImg from "@/data/Folderwlogo/ticketbase.png";
+import compliancelinkImg from "@/data/Folderwlogo/compliancelink.png";
+import auditwarpImg from "@/data/Folderwlogo/auditwarp.png";
+import cybervaultImg from "@/data/Folderwlogo/cybervault.png";
+import suisendImg from "@/data/Folderwlogo/suisend.png";
+import racecraftImg from "@/data/Folderwlogo/racecraft.png";
 import basenftImg from "@/data/Folderwlogo/Gemini_Generated_Image_jh733pjh733pjh73.png";
 import ethklImg from "@/data/Folderwlogo/Gemini_Generated_Image_wwtns0wwtns0wwtn.png";
 import { RiNextjsFill, RiNodejsFill, RiReactjsFill } from "react-icons/ri";
@@ -273,6 +273,8 @@ export type Project = {
   author?: string;
   description?: string;
 };
+
+
 const projects: Project[] = [
   {
     id: "defisync",
@@ -402,7 +404,7 @@ const projects: Project[] = [
     },
     live: "https://cybervault.io",
     github: "https://github.com/NeoV55/CyberVault",
-    quote: "At last, a decentralized storage solution that doesn't compromise on speed or user experience.",
+    quote: "At last, a decentralized security solution that doesn't compromise on speed or user experience.",
     author: "Jessica Wu, CTO of DataGuard",
     description: "Next-generation encrypted storage solution combining zero-knowledge proofs with decentralized infrastructure for ultimate data security.",
     get content() {
@@ -473,62 +475,6 @@ const projects: Project[] = [
             Immersive racing simulation platform with real-time telemetry, competitive leaderboards, and blockchain-verified achievements.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
-        </div>
-      );
-    },
-  },
-  {
-    id: "basenft",
-    category: "NFT",
-    title: "BaseNFT",
-    src: basenftImg.src,
-    screenshots: ["landing.png"],
-    skills: {
-      frontend: [PROJECT_SKILLS.next, PROJECT_SKILLS.ts, PROJECT_SKILLS.tailwind],
-      backend: [PROJECT_SKILLS.node],
-    },
-    live: "https://basenft.io",
-    quote: "The best NFT platform on Base. Period. Low fees and a great community.",
-    author: "Artist & Collector",
-    description: "Premier NFT marketplace on Base L2, featuring gas-optimized minting, curated collections, and creator royalty protection.",
-    get content() {
-      return (
-        <div>
-          <TypographyP className="font-mono text-2xl text-center">
-            {this.title}
-          </TypographyP>
-          <TypographyP className="font-mono ">
-            Premier NFT marketplace on Base L2, featuring gas-optimized minting, curated collections, and creator royalty protection.
-          </TypographyP>
-          <ProjectsLinks live={this.live} repo={this.github} />
-        </div>
-      );
-    },
-  },
-  {
-    id: "ethklscroll",
-    category: "Infrastructure",
-    title: "ETHKL Scroll",
-    src: ethklImg.src,
-    screenshots: ["landing.png"],
-    skills: {
-      frontend: [PROJECT_SKILLS.react, PROJECT_SKILLS.ts, PROJECT_SKILLS.chakra],
-      backend: [PROJECT_SKILLS.node, PROJECT_SKILLS.postgres],
-    },
-    live: "https://ethkl-scroll.io",
-    quote: "Connecting the local Ethereum community to the world. A vital piece of infrastructure.",
-    author: "Dev Relations Lead",
-    description: "Ethereum Kuala Lumpur's official Scroll L2 integration hub, providing developer tools and community resources for zkEVM development.",
-    get content() {
-      return (
-        <div>
-          <TypographyP className="font-mono text-2xl text-center">
-            {this.title}
-          </TypographyP>
-          <TypographyP className="font-mono ">
-            Ethereum Kuala Lumpur's official Scroll L2 integration hub, providing developer tools and community resources for zkEVM development.
-          </TypographyP>
-          <ProjectsLinks live={this.live} />
         </div>
       );
     },

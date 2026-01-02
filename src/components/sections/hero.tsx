@@ -76,7 +76,7 @@ const HeroSection = () => {
                       "cursor-default font-display sm:text-xl md:text-xl bg-clip-text "
                     )}
                   >
-                    A Full Stack Web Developer
+                    Cross-Domain Technologist | Cybersecurity, Blockchain & AI Engineering 
                   </p>
                 </BlurIn>
               </div>
@@ -103,7 +103,7 @@ const HeroSection = () => {
                           variant={"outline"}
                           className="w-full overflow-hidden"
                         >
-                          Hire Me
+                          Network
                         </Button>
                       </Link>
                     </TooltipTrigger>
