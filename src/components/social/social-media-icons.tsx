@@ -11,32 +11,32 @@ const BUTTONS = [
   {
     name: "Github",
     href: config.social.github,
-    icon: <SiGithub size={"24"} color={"#fff"} />,
+    icon: <SiGithub size={"24"} />,
   },
   {
     name: "Twitter",
     href: config.social.twitter,
-    icon: <SiX size={"24"} color={"#fff"} />,
+    icon: <SiX size={"24"}  />,
   },
   {
     name: "Facebook",
     href: config.social.facebook,
-    icon: <SiFacebook size={"24"} color={"#fff"} />,
+    icon: <SiFacebook size={"24"} />,
   },
   {
     name: "Medium",
     href: config.social.medium,
-    icon: <SiMedium size={"24"} color={"#fff"} />,
+    icon: <SiMedium size={"24"} />,
   },
   {
     name: "Substack",
     href: config.social.substack,
-    icon: <SiSubstack size={"24"} color={"#fff"} />,
+    icon: <SiSubstack size={"24"}  />,
   },
   {
     name: "Dev.to",
     href: config.social.devdotto,
-    icon: <SiDevdotto size={"24"} color={"#fff"} />,
+    icon: <SiDevdotto size={"24"}  />,
   },
 ];
 
