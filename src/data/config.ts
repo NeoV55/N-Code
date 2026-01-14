@@ -53,8 +53,8 @@ const config = {
     linkedin: "https://my.linkedin.com/in/navinder-tech-b2600538a",
     facebook: "https://www.facebook.com/navinder.ram.7",
     medium : "https://medium.com/@ndram.com",
-    substack : "https://navindertech.substack.com/",
-    devdotto : "https://dev.to/navindertech",
+    substack : "https://neo555.substack.com/",
+    devdotto : "https://dev.to/navinder",
     github: "https://github.com/NeoV55",
   },
 };
