@@ -24,14 +24,23 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: config.title,
+  // Using a template helps Google understand the relationship between pages
+  title: {
+    default: config.title,
+    template: `%s | Navinder`,
+  },
   description: config.description.long,
   keywords: config.keywords,
   authors: [{ name: config.author }],
+  // This "other" field helps Google recognize the specific Site Name
+  other: {
+    "og:site_name": "Navinder Tech",
+  },
   openGraph: {
     title: config.title,
     description: config.description.short,
     url: config.site,
+    siteName: "Navinder Tech",
     images: [
       {
         url: config.ogImg,
@@ -70,15 +79,32 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // JSON-LD is the most important part for fixing the circled area in your image
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Navinder",
+    "alternateName": ["Navinder Tech", "Navinder Portfolio"],
+    "url": config.site,
+  };
+
   return (
-    <html lang="en" className={[inter.variable, archivoBlack.variable, "font-display"].join(" ")} suppressHydrationWarning>
+    <html 
+      lang="en" 
+      className={[inter.variable, archivoBlack.variable, "font-display"].join(" ")} 
+      suppressHydrationWarning
+    >
       <head>
         <Script
           defer
           src={process.env.UMAMI_DOMAIN}
           data-website-id={process.env.UMAMI_SITE_ID}
-        ></Script>
-        {/* <Analytics /> */}
+        />
+        {/* Schema.org script for Google Site Name */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body>
         <ThemeProvider

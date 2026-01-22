@@ -1,5 +1,6 @@
 const config = {
   title: "Full-Stack Web3 Security Architect, AI Researcher & Systems Engineer",
+  siteName: "Navinder Tech",
   description: {
     long: "Explore the portfolio of Navinder, a cross-domain technologist specializing in cybersecurity, blockchain architecture, and AI-driven automation. From building secure DeFi protocols and high-performance GPU compute farms to developing ML-powered trading engines, I bridge the gap between hardware, security, and scalable software.",
     short:
