@@ -32,7 +32,6 @@ export const metadata: Metadata = {
   description: config.description.long,
   keywords: config.keywords,
   authors: [{ name: config.author }],
-  // This "other" field helps Google recognize the specific Site Name
   other: {
     "og:site_name": "Navinder Tech",
   },
@@ -83,8 +82,8 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Navinder",
-    "alternateName": ["Navinder Tech", "Navinder Portfolio"],
+    "name": "Navinder Tech",
+    "alternateName": ["Navinder", "Navinder Tech Portfolio"],
     "url": config.site,
   };
 
