@@ -26,20 +26,20 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   // Using a template helps Google understand the relationship between pages
   title: {
-    default: config.title,
+    default: "Navinder | Web3 Security Architect",
     template: `%s | Navinder`,
   },
   description: config.description.long,
   keywords: config.keywords,
   authors: [{ name: config.author }],
   other: {
-    "og:site_name": "Navinder Tech",
+    "og:site_name": "Navinder",
   },
   openGraph: {
-    title: config.title,
+    title: "Navinder",
     description: config.description.short,
     url: config.site,
-    siteName: "Navinder Tech",
+    siteName: "Navinder",
     images: [
       {
         url: config.ogImg,
@@ -82,7 +82,7 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Navinder Tech",
+    "name": "Navinder",
  // "alternateName": ["Navinder", "Navinder Tech Portfolio"],
     "url": "https://navinder.tech",
   };
