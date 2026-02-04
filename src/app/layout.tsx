@@ -83,8 +83,8 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Navinder Tech",
-    "alternateName": ["Navinder", "Navinder Tech Portfolio"],
-    "url": config.site,
+ // "alternateName": ["Navinder", "Navinder Tech Portfolio"],
+    "url": "https://navinder.tech",
   };
 
   return (
