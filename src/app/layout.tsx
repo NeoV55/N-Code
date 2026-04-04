@@ -15,6 +15,7 @@ import EasterEggs from "@/components/easter-eggs";
 import { config } from "@/data/config";
 import SocketContextProvider from "@/contexts/socketio";
 import RemoteCursors from "@/components/realtime/remote-cursors";
+import { Archivo } from "next/font/google";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -69,8 +70,14 @@ const inter = Inter({
 
 const archivoBlack = Archivo_Black({
   subsets: ["latin"],
-  weight: "400",
+  weight: "400", // Archivo Black only supports 400 (which is actually weight 900)
   variable: "--font-display",
+});
+
+const archivoRegular = Archivo({
+  subsets: ["latin"],
+  weight: ["400", "600"],
+  variable: "--font-sans",
 });
 
 export default function RootLayout({
