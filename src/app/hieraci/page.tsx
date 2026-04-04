@@ -14,77 +14,85 @@ import mcsaImage from "@/app/hieraci/badges/MCSA.png";
 import ccnaImage from "@/app/hieraci/badges/ccna.png";
 import basedImage from "@/app/hieraci/badges/base.png";
 import scrollImage from "@/app/hieraci/badges/scroll.png";
+import jpkImage from "@/app/hieraci/badges/jpk.png";
 
 const BADGES = [
   {
     id: "CPTE",
     name: "Certified Penetration Testing Engineer (Mile2)",
     description:
-      "Advanced training for professionals to master the cybersecurity landscape and ethical hacking techniques.",
+      "NIST, NICE, DoD 8140/8570, FBI, ISO/IEC 17024. Advanced training for professionals to master the cybersecurity landscape, ethical hacking techniques, and vulnerability assessment.",
     image: cpteImage.src,
   },
   {
     id: "CPTE",
     name: "Certified Penetration Testing Engineer (Mile2)",
     description:
-      "Advanced training for professionals to master the cybersecurity landscape and ethical hacking techniques.",
+      "NIST, NICE, DoD 8140/8570, FBI, ISO/IEC 17024.",
     image: cpte1Image.src,
   },
   {
     id: "CISE",
     name: "Certified Information Security Expert (InnoBuzz)",
     description:
-      "Expertise in both defensive and offensive security strategies to protect critical infrastructure.",
+      "ISO/IEC 27001, OWASP, IT ACT, Industry Best Practices. Expertise in both defensive and offensive security strategies to protect critical digital infrastructure and information assets.",
     image: ciseImage.src,
   },
   {
     id: "MCP",
     name: "Microsoft Certified Professional",
     description:
-      "Validates technical expertise through industry-recognized Microsoft technology evaluations.",
+      "ISO/IEC 27017/27018, Microsoft Product Standards. Validates technical expertise and professional skills through industry-recognized evaluations of Microsoft technologies and solutions.",
     image: mcpImage.src,
   },
   {
     id: "CISCO",
     name: "Cisco Certified Specialist",
     description:
-      "Recognized industry standard for professional-level networking and infrastructure management.",
+      "IEEE, IETF RFCs, ANSI/ISO/IEC 17024. Focuses on specific technology focus areas, validating deep technical knowledge in specialized Cisco networking domains.",
     image: ciscoImage.src,
   },
   {
     id: "MCA",
     name: "Microsoft Certified Associate",
     description:
-      "Demonstrates core technical skills required to build and manage modern digital environments.",
+      "ISO/IEC 27017/27018, NIST SP 800-53, Microsoft Product Standards. Demonstrates the core technical skills required to build, manage, and optimize modern digital environments and cloud services.",
     image: mcaImage.src,
   },
   {
     id: "MCSA",
     name: "Microsoft Certified Solutions Associate: Windows Server 2012",
     description:
-      "Mastery in server administration, configuration, and infrastructure management.",
+      "ISO/IEC 27017/27018, DoD 8140/8570, NIST SP 800-53, Microsoft Product Standards. Mastery in server administration, infrastructure configuration, and the management of enterprise-level Windows Server environments.",
     image: mcsaImage.src,
   },
   {
     id: "CCNA",
     name: "Cisco Certified Network Associate",
     description:
-      "Cisco Certified Network Associate: The gold standard for networking foundations and routing.",
+      "IEEE, IETF RFCs, ANSI/ISO/IEC 17024. The industry standard for foundational networking, covering routing, switching, wireless access, and security fundamentals.",
     image: ccnaImage.src,
   },
   {
     id: "BASED",
     name: "Builder at Based SEA - Base Around The World SouthEast Asia",
     description:
-      "Specialized Penetration Testing certification focusing on advanced exploitation and vulnerability assessment.",
+      "Recognition for developing decentralized applications and contributing to the Base ecosystem within the Southeast Asian Web3 community.",
     image: basedImage.src,
   },
   {
     id: "SCROLL",
     name: "ETHKL2024 Scroll Hacker",
     description:
-      "Cisco Certified Network Associate: The gold standard for networking foundations and routing.",
+      "Acknowledgment for technical innovation and building scalable solutions on the Scroll zkEVM Layer 2 network during the ETHKL hackathon.",
     image: scrollImage.src,
+  },
+  {
+    id: "JPK",
+    name: "Jabatan Pembangunan Kemahiran (JPK) - Malaysia",
+    description:
+      "NOSS (Malaysia), MQF Level 2/3. SKM (Level 2) Pembantu Juruteknik Komputer II and SKM (Level 3) Juruteknik Komputer III. Professional vocational qualification recognizing technical competency in computer systems and maintenance under the Malaysian National Occupational Skills Standards.",
+    image: jpkImage.src,
   },
 ];
 
@@ -246,29 +254,38 @@ const ProfileSummary: React.FC = () => {
           and securing the future of decentralized infrastructure
         </h3>
 
-        <p className="text-base md:text-lg text-zinc-700 dark:text-zinc-400 leading-relaxed">
-          My work exists at the intersection of Cybersecurity, Blockchain
-          Architecture, and Artificial Intelligence, where I bridge the gap
-          between physical hardware optimization and high-level software
-          intelligence. With over a decade of experience ranging from managing
-          global enterprise IT operations to engineering autonomous Web3
-          protocols. I have developed a unique perspective on building resilient,
-          high-performance systems from the ground up.
-        </p>
+        <div className="font-normal">
+          <p className="font-sans font-normal text-base md:text-xl text-zinc-1000 dark:text-zinc-400">
+            My work exists at the intersection of Cybersecurity, Blockchain
+            Architecture, and Artificial Intelligence, where I bridge the gap
+            between physical hardware optimization and high-level software
+            intelligence. With over a decade of experience ranging from managing
+            global enterprise IT operations to engineering autonomous Web3
+            protocols. I have developed a unique perspective on building resilient,
+            high-performance systems from the ground up.
+          </p>
+  
+          <BadgeCarousel />
 
-        <BadgeCarousel />
-
-        <p className="text-base md:text-lg text-zinc-700 dark:text-zinc-400 leading-relaxed">
-          Driven by a security-first philosophy, I specialize in navigating the
-          complexities of modern engineering, whether that involves auditing
-          smart contracts, optimizing high compute hardware farms, or deploying
-          machine learning models to solve intricate problems. My approach
-          combines the technical rigor of a penetration tester with the strategic
-          vision of a systems architect, ensuring that innovation never comes at
-          the expense of integrity. I thrive on solving deep-domain challenges
-          and remain committed to the continuous pursuit of technical excellence
-          in an ever-evolving digital landscape.
-        </p>
+          {/* Centered caption added here */}
+          <div className="text-center mt-2 mb-8">
+            <p className="text-sm md:text-base font-normal text-zinc-500 dark:text-zinc-500 italic">
+              "Professional Certifications and Credential Social Proof"
+            </p>
+          </div>
+  
+          <p className="font-sans font-normal text-base md:text-xl text-zinc-1000 dark:text-zinc-400">
+            Driven by a security-first philosophy, I specialize in navigating the
+            complexities of modern engineering, whether that involves auditing
+            smart contracts, optimizing high compute hardware farms, or deploying
+            machine learning models to solve intricate problems. My approach
+            combines the technical rigor of a penetration tester with the strategic
+            vision of a systems architect, ensuring that innovation never comes at
+            the expense of integrity. I thrive on solving deep-domain challenges
+            and remain committed to the continuous pursuit of technical excellence
+            in an ever-evolving digital landscape.
+          </p>
+        </div>
       </div>
     </section>
   );
