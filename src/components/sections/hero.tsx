@@ -79,6 +79,19 @@ const HeroSection = () => {
                     Cross-Domain Technologist | Cybersecurity, Blockchain & AI Engineering 
                   </p>
                 </BlurIn>
+                {/* NEW SECTION ADDED BELOW */}
+                <BlurIn delay={1.4}>
+                  <p
+                    className={cn(
+                      "md:self-start mt-2 font-sans font-normal text-[10px] md:text-sm text-slate-500 dark:text-zinc-500 ml-3 max-w-xl leading-relaxed uppercase tracking-wider",
+                      "cursor-default opacity-80"
+                    )}
+                  >
+                    <span className="font-bold text-slate-700 dark:text-zinc-300">Standards & Compliances:</span>
+                    <br />
+                    ISO/IEC 17024/27001, NIST, NICE, DoD 8140/8570, FBI, OWASP, IEEE, IETF RFCs, ANSI/ISO/IEC 27017/27018, NIST SP 800-53, MQF, NOSS, KPM, JPK
+                  </p>
+                </BlurIn>
               </div>
               <div className="mt-8 md:ml-2 flex flex-col gap-3">
                 <Link
