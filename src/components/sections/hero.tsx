@@ -95,9 +95,7 @@ const HeroSection = () => {
               </div>
               <div className="mt-8 md:ml-2 flex flex-col gap-3">
                 <Link
-                  href={
-                    ""
-                  }
+                  href="/resume.html" // Ensure your file is in the /public folder
                   target="_blank"
                   className="flex-1"
                 >
