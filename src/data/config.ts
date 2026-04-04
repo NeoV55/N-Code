@@ -51,7 +51,7 @@ const config = {
   },
   social: {
     twitter: "https://x.com/Navinder_05",
-    linkedin: "https://my.linkedin.com/in/navinder-tech-b2600538a",
+    linkedin: "https://www.linkedin.com/in/navinder-dinesh-ram-b2600538a/",
     facebook: "https://www.facebook.com/navinder.ram.7",
     medium : "https://medium.com/@ndram.com",
     substack : "https://neo555.substack.com/",
