@@ -72,7 +72,7 @@ const ContactForm = () => {
       <div className="grid w-full gap-1.5 mb-4">
         <Label htmlFor="content"></Label>
         <a
-                    href="https://wa.me/60168932327"
+                    href="https://wa.me/601133383424"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="
@@ -102,7 +102,7 @@ const ContactForm = () => {
         
                       <div className="flex flex-col">
                         <span className="text-lg font-bold text-white dark:text-white">WhatsApp</span>
-                        <span className="text-sm text-white/70 dark:text-white/70">Chat instantly</span>
+                        <span className="text-sm text-white/70 dark:text-white/70">Chat instantly with Service Administrators</span>
                       </div>
                     </div>
         
@@ -140,7 +140,7 @@ const ContactForm = () => {
         
                       <div className="flex flex-col">
                         <span className="text-lg font-bold text-white dark:text-white">Telegram</span>
-                        <span className="text-sm text-white/70 dark:text-white/70">Direct message</span>
+                        <span className="text-sm text-white/70 dark:text-white/70">Direct message to Navinder's personal Telegram</span>
                       </div>
                     </div>
         
