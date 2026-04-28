@@ -25,7 +25,7 @@ const SERVICES_DATA = [
     icon: FaShieldAlt,
     color: "red",
     description:
-      "Protection for your digital assets with enterprise-grade security protocols.",
+      "Expert risk mitigation and architectural hardening to safeguard your digital infrastructure.",
     items: [
       "Endpoint Hardening",
       "Vulnerability Assessment & Gap Analysis",
