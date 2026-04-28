@@ -21,16 +21,16 @@ import {
 
 const SERVICES_DATA = [
   {
-    title: "Cybersecurity Services",
+    title: "Cyber Security Consulting & Strategy",
     icon: FaShieldAlt,
     color: "red",
     description:
       "Protection for your digital assets with enterprise-grade security protocols.",
     items: [
-      "Endpoint Security",
-      "Penetration Testing & Ethical Hacking",
-      "Network Security Audits",
-      "Blockchain Security",
+      "Endpoint Hardening",
+      "Vulnerability Assessment & Gap Analysis",
+      "Network Infrastructure Audits",
+      "Blockchain Security Architecture",
     ],
   },
   {
