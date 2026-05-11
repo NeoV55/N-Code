@@ -57,10 +57,8 @@ const SERVICES_DATA = [
     items: [
       "Enterprise Virtualization Solutions",
       "Disaster Recovery & Backup Management",
-      "Hybrid & Multi-Cloud Architecture",
       "High-Performance Compute (HPC) Clusters",
       "Hyper-Converged Infrastructure Design",
-      
       "Multi-Cloud Strategy & Hybrid Integration",
     ],
   },
