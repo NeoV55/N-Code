@@ -43,6 +43,9 @@ const SERVICES_DATA = [
       "Data Lakes, Warehouses & Pipelines",
       "Machine Learning Solutions",
       "AI-Driven Blockchain Solutions",
+      "Computer Vision & Edge Intelligence",
+      "NLP & LLM Model Integration",
+      "Predictive Maintenance & Optimization",
     ],
   },
   {
@@ -55,6 +58,8 @@ const SERVICES_DATA = [
       "Cloud Infrastructure Management",
       "Virtualization Solutions",
       "Disaster Recovery & Backup",
+      "Hybrid & Multi-Cloud Architecture",
+      "High-Performance Compute (HPC) Clusters",
     ],
   },
   {
@@ -78,11 +83,11 @@ const SERVICES_DATA = [
     description:
       "Strategic IT operations to optimize efficiency and reliable growth.",
     items: [
-      "ITSM Optimization",
-      "Project Management",
-      "Managed Services Provider",
-      "Business Solutions",
-      "Consulting",
+      "IT Governance & Framework Alignment",
+      "Enterprise Asset & Lifecycle Management",
+      "Business Continuity & Resilience Planning",
+      "MSP & Vendor Ecosystem Orchestration",
+      "Infrastructure Monitoring & AIOps",
     ],
   },
   {
@@ -92,11 +97,11 @@ const SERVICES_DATA = [
     description:
       "Empowering minds through comprehensive ICT and cybersecurity education.",
     items: [
-      "Cybersecurity Training",
-      "ICT Trainings",
-      "Technical Writings",
-      "CS Engineering Writings",
-      "Coding Classes",
+      "Custom Corporate Training Programs",
+      "Academic & Technical Research Publications",
+      "Professional Certification Coaching",
+      "Deep-Tech Mentorship & Coding Labs",
+      "Security Awareness & Behavioral Engineering",
     ],
   },
 ];
