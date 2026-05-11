@@ -98,10 +98,10 @@ const SERVICES_DATA = [
       "Empowering minds through comprehensive ICT and cybersecurity education.",
     items: [
       "Custom Corporate Training Programs",
-      "Academic & Technical Research Publications",
+      "Technical Research Publications",
       "Professional Certification Coaching",
       "Deep-Tech Mentorship & Coding Labs",
-      "Security Awareness & Behavioral Engineering",
+      "Security Awareness & Behavioral Science",
     ],
   },
 ];
