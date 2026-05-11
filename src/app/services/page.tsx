@@ -27,10 +27,10 @@ const SERVICES_DATA = [
     description:
       "Expert risk mitigation and architectural hardening to safeguard your digital infrastructure.",
     items: [
-      "Endpoint Hardening",
       "Vulnerability Assessment & Gap Analysis",
-      "Network Infrastructure Audits",
-      "Blockchain Security Architecture",
+      "Zero-Trust Architecture & Governance",
+      "Blockchain & Smart Contract Audits",
+      "Regulatory & Compliance Standards",
     ],
   },
   {
@@ -55,11 +55,13 @@ const SERVICES_DATA = [
     description:
       "Scalable infrastructure designed for resilience and performance.",
     items: [
-      "Cloud Infrastructure Management",
-      "Virtualization Solutions",
-      "Disaster Recovery & Backup",
+      "Enterprise Virtualization Solutions",
+      "Disaster Recovery & Backup Management",
       "Hybrid & Multi-Cloud Architecture",
       "High-Performance Compute (HPC) Clusters",
+      "Hyper-Converged Infrastructure Design",
+      
+      "Multi-Cloud Strategy & Hybrid Integration",
     ],
   },
   {
@@ -69,11 +71,11 @@ const SERVICES_DATA = [
     description:
       "Bespoke software tailored to your unique business requirements.",
     items: [
-      "Custom Application Development",
-      "Smart Contract Development",
-      "DevOps & CI/CD Implementation",
-      "Machine Learning Model Development",
-      "Web and Mobile App Developments",
+      "Full-Cycle Software Engineering",
+      "Decentralized Protocol dApp Architecture",
+      "Neural Network Design & Fine-Tuning",
+      "DevSecOps & Automated CI/CD Pipelines",
+      "Cross-Platform Mobile & Web Ecosystems",
     ],
   },
   {
