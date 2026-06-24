@@ -1,5 +1,4 @@
-"use client";
-
+// Server Component — no "use client" here so Next.js can inject OG/metadata tags
 import React from "react";
 import SmoothScroll from "@/components/smooth-scroll";
 import { cn } from "@/lib/utils";

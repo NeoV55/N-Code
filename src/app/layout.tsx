@@ -25,6 +25,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL(config.site),
   // Using a template helps Google understand the relationship between pages
   title: {
     default: "Navinder | Web3 Security Architect",
@@ -33,29 +34,28 @@ export const metadata: Metadata = {
   description: config.description.long,
   keywords: config.keywords,
   authors: [{ name: config.author }],
-  other: {
-    "og:site_name": "Navinder",
-  },
   openGraph: {
-    title: "Navinder",
+    title: "Navinder | Web3 Security Architect",
     description: config.description.short,
     url: config.site,
     siteName: "Navinder",
     images: [
       {
-        url: config.ogImg,
-        width: 800,
-        height: 600,
-        alt: "Portfolio preview",
+        url: "/assets/image.png",
+        width: 1200,
+        height: 630,
+        alt: "Navinder | Web3 Security Architect, AI Researcher & Systems Engineer",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: config.title,
+    title: "Navinder | Web3 Security Architect",
     description: config.description.short,
-    images: [config.ogImg],
+    site: "@Navinder_05",
+    creator: "@Navinder_05",
+    images: ["/assets/image.png"],
   },
   robots: {
     index: true,
